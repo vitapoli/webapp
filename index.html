@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Приветствие</title>
+
+<!-- Метатеги для добавления на главный экран -->
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Приветствие" />
+
+<!-- Иконка для ярлыка (можете заменить на свою) -->
+<link rel="apple-touch-icon" sizes="180x180" href="6723041188.jpg"/>
+<link rel="icon" sizes="192x192" href="6723041188.jpg"/>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+
+<h1>Добро пожаловать!</h1>
+<button id="greetBtn">Нажми меня</button>
+
+<script>
+  document.getElementById('greetBtn').addEventListener('click', () => {
+    alert('Привет! Это ваше простое мобильное приложение.');
+  });
+</script>
+
+</body>
+</html>
