@@ -2,18 +2,9 @@ from telegram.ext import Application, CommandHandler, ConversationHandler, Messa
 from telegram import Update
 import json
 import datetime
-import os
-from dotenv import load_dotenv
 
-#import requests
-#import aiohttp
-
-load_dotenv()  # Загружает переменные из файла .env
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
-
-DB_FILE_PATH = r"C:\Users\My Comp\Desktop\TelegramBot\birthday_bot\db3.json"
-
-#access_key = '-5u05_aIm2BiO1s-IQ5OMD0PIi3iiuqk14hY1aJ_2kI'
+TELEGRAM_TOKEN = "Вставьте_свой_токен"
+DB_FILE_PATH = r"Вставьте_свой_путь_к_файлу_.json"
 
 # Варианты языков
 LANGUAGES = {
@@ -276,4 +267,5 @@ def main():
 if __name__ == "__main__":
     main()
     
+
    
